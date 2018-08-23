@@ -5,7 +5,7 @@
 [translate-svg]: http://llever.com/translate.svg
 [translate-list]: https://github.com/chinanf-boy/chinese-translate-list
     
-「 同于 管理 拥有多个packages 的 js 项目 」
+「 用于 管理 拥有多个packages 的 js项目 的工具 」
 
 > 比如 `npm install -g @vue/cli` ==> 这样的`@vue`样式, 供给 vuejs组织 管理 [cli生态链工具](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue)
 > 或插件,比如[gatsbyjs](https://github.com/gatsbyjs/gatsby/tree/master/packages)
@@ -42,16 +42,12 @@
 
 ### 目录
 
-<!-- START doctoc -->
-<!-- END doctoc -->
-
-
 <p align="center">
   <img alt="Lerna" src="https://cloud.githubusercontent.com/assets/952783/15271604/6da94f96-1a06-11e6-8b04-dc3171f79a90.png" width="480">
 </p>
 
 <p align="center">
-  A tool for managing JavaScript projects with multiple packages.
+  用于 管理 拥有多个packages 的 js项目 的工具.
 </p>
 
 <p align="center">
@@ -61,28 +57,43 @@
   <a href="https://slack.lernajs.io/"><img alt="Slack Status" src="https://slack.lernajs.io/badge.svg"></a>
 </p>
 
--   [关于](#about)
--   [入门](#getting-started)
--   [怎么运行的](#how-it-works)
--   [故障排除](#troubleshooting)
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [关于](#%E5%85%B3%E4%BA%8E)
+  - [Lerna项目是什么样的?](#lerna%E9%A1%B9%E7%9B%AE%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84)
+  - [Lerna能做什么?](#lerna%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88)
+- [入门](#%E5%85%A5%E9%97%A8)
+- [怎么运行的](#%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C%E7%9A%84)
+  - [固定/锁定模式 (默认)](#%E5%9B%BA%E5%AE%9A%E9%94%81%E5%AE%9A%E6%A8%A1%E5%BC%8F-%E9%BB%98%E8%AE%A4)
+  - [独立模式 (`--independent`)](#%E7%8B%AC%E7%AB%8B%E6%A8%A1%E5%BC%8F---independent)
+- [故障排除](#%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4)
+- [经常问的问题](#%E7%BB%8F%E5%B8%B8%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98)
+- [概念](#%E6%A6%82%E5%BF%B5)
+  - [lerna.json](#lernajson)
+  - [共拥`devDependencies`](#%E5%85%B1%E6%8B%A5devdependencies)
+  - [Git 托管依赖](#git-%E6%89%98%E7%AE%A1%E4%BE%9D%E8%B5%96)
+  - [readme徽章](#readme%E5%BE%BD%E7%AB%A0)
+  - [巫法](#%E5%B7%AB%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 -   命令
-    -   [`lerna publish`](./commands/publish#readme)
-    -   [`lerna version`](./commands/version#readme)
-    -   [`lerna bootstrap`](./commands/bootstrap#readme)
-    -   [`lerna list`](./commands/list#readme)
-    -   [`lerna changed`](./commands/changed#readme)
-    -   [`lerna diff`](./commands/diff#readme)
-    -   [`lerna exec`](./commands/exec#readme)
-    -   [`lerna run`](./commands/run#readme)
-    -   [`lerna init`](./commands/init#readme)
-    -   [`lerna add`](./commands/add#readme)
-    -   [`lerna clean`](./commands/clean#readme)
-    -   [`lerna import`](./commands/import#readme)
-    -   [`lerna link`](./commands/link#readme)
--   [概念](#concepts)
--   [Lerna.json](#lernajson)
--   [全球旗帜](./core/global-options)
--   [过滤标志](./core/filter-options)
+    - [ ]  [`lerna publish`](./commands/publish#readme)
+    - [ ]  [`lerna version`](./commands/version#readme)
+    - [ ]  [`lerna bootstrap`](./commands/bootstrap#readme)
+    - [ ]  [`lerna list`](./commands/list#readme)
+    - [ ]  [`lerna changed`](./commands/changed#readme)
+    - [ ]  [`lerna diff`](./commands/diff#readme)
+    - [ ]  [`lerna exec`](./commands/exec#readme)
+    - [ ]  [`lerna run`](./commands/run#readme)
+    - [ ]  [`lerna init`](./commands/init#readme)
+    - [ ]  [`lerna add`](./commands/add#readme)
+    - [ ]  [`lerna clean`](./commands/clean#readme)
+    - [ ]  [`lerna import`](./commands/import#readme)
+    - [ ]  [`lerna link`](./commands/link#readme)
 
 ## 关于
 
@@ -94,7 +105,7 @@
 
 Lerna还可以减少开发和构建环境中大量软件包副本的时间和空间需求 - 通常是将项目划分为多个单独的NPM软件包的缺点. 见[提升文件](doc/hoist.md)详情. 
 
-### Lerna回购的样子是什么样的?
+### Lerna项目是什么样的?
 
 实际上它很少. 您有一个如下所示的文件系统: 
 
@@ -150,9 +161,13 @@ Lerna允许您使用以下两种模式之一管理项目: 固定或独立.
 
 ## 故障排除
 
+- [ ]
+
 如果您在使用Lerna时遇到任何问题,请查看我们的[故障排除](doc/troubleshooting.md)记录您可能找到问题答案的文档. 
 
 ## 经常问的问题
+
+- [ ]
 
 看到[FAQ.md](FAQ.md). 
 
@@ -229,7 +244,7 @@ lerna.json中的包配置是一个匹配包含package.json的目录的globs列�
 
 找到叶包下面`packages/*`被认为是"最佳实践",但不是使用Lerna的要求. 
 
-### 共同`devDependencies`
+### 共拥`devDependencies`
 
 最`devDependencies`可以拉到Lerna回购的根源. 
 
@@ -255,7 +270,7 @@ lerna.json中的包配置是一个匹配包含package.json的目录的globs列�
 }
 ```
 
-### Git Hosted Dependencies
+### Git 托管依赖
 
 Lerna允许将本地依赖包的目标版本编写为[git remote url](https://docs.npmjs.com/cli/install)用一个`committish` (例如. ,`#v1.0.0`要么`#semver:^1.0.0`) 而不是正常的数字版本范围. 当包必须是私有的时,这允许通过git存储库分发包[私人npm注册表是不可取的](https://www.dotconferences.com/2016/05/fabien-potencier-monolithic-repositories-vs-many-repositories). 
 
@@ -281,13 +296,13 @@ Lerna允许将本地依赖包的目标版本编写为[git remote url](https://do
 -   `lerna bootstrap`将正确符号链接`pkg-2`成`pkg-1`. 
 -   `lerna publish`将更新委托 (`#v1.0.0`) `pkg-1`什么时候`pkg-2`变化. 
 
-### 自述文件徽章
+### readme徽章
 
 用Lerna?添加README徽章以显示它: [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
     [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
-### 巫师
+### 巫法
 
 如果您更喜欢cli的一些指导 (如果您即将开始使用lerna或将其介绍给新团队) ,您可能会喜欢[勒拿湖的向导](https://github.com/szarouski/lerna-wizard). 它将引导您完成一系列明确定义的步骤: 
 
