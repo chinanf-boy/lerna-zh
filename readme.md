@@ -163,11 +163,11 @@ Lerna允许您使用以下两种模式之一来管理项目: 固定或独立.
 
 ## 故障排除
 
-- [ ] 如果您在使用Lerna时遇到任何问题,请查看我们的[故障排除](doc/troubleshooting.zh.md)文档,上面记录您可能找到的问题答案. 
+- [x] 如果您在使用Lerna时遇到任何问题,请查看我们的[故障排除](doc/troubleshooting.zh.md)文档,上面记录您可能找到的问题答案. 
 
 ## 经常问的问题
 
-- [ ] 看[FAQ.zh.md](FAQ.zh.md). 
+- [x] 看[FAQ.zh.md](FAQ.zh.md). 
 
 ## 提示
 

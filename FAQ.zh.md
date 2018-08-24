@@ -1,55 +1,53 @@
-
 # 常见问题
 
-*这份文件正在进行中. *
+_这份文件正在进行中._
 
-## 如何将包添加到我的LeRNA存储库?
+## 如何将包添加到我的 Lerna 存储库?
 
-对于您添加到LeNA存储库的任何包,而不是运行`npm install`你应该跑步[`lerna bootstrap`][bootstrap]. 这将考虑到现有项目中的`packages`文件夹以及外部依赖项. 
+对于您添加到 Lerna 存储库的任何包,不是运行`npm install`,而你应该使用[`lerna bootstrap`][bootstrap]. 这将考虑到现有项目中的`packages`文件夹以及外部依赖项.
 
-### 新包装
+### 新包
 
-在您的包中创建目录`packages`文件夹,并运行`npm init`正常创建`package.json`你的新包裹. 
+在您的包`packages`文件夹中创建目录,并正常运行`npm init`创建`package.json`的新包.
 
 ### 现有包
 
-你可以使用[`lerna import <package>`][import]将现有包传输到Lerna存储库中;此命令将保留提交历史. 
+你可以使用[`lerna import <package>`][import]将现有包传输到 Lerna 存储库中; 此命令将保留提交历史.
 
-[`lerna import <package>`][import]采用本地路径而不是URL. 在这种情况下,你需要有你想要链接到你的文件系统的回购. 
+[`lerna import <package>`][import]采用本地路径而不是 URL. 在这种情况下,你需要有你想要链接到你的文件系统的repo.
 
 [bootstrap]: https://github.com/lerna/lerna/blob/master/commands/bootstrap/README.md
-
 [import]: https://github.com/lerna/lerna/blob/master/commands/import/README.md
 
-## 如何重试发布`publish`失败?
+## 如何重试,如果发布`publish`失败?
 
-有时,`lerna publish`不起作用. 您的网络可能有打嗝,您可能还没有登录到NPM等. 
+有时,`lerna publish`不起作用. 您的网络可能有打嗝,您可能还没有登录到 NPM 等.
 
-如果`lerna.json`还没有更新,只是尝试一下`lerna publish`再一次. 
+如果`lerna.json`还没有更新,只是尝试一下`lerna publish`再一次.
 
 如果已经更新,可以强制重新发布. `lerna publish --force-publish $(ls packages/)`
 
-## 引导过程真的很慢,我能做什么?
+## bootstrap过程真的很慢,我能做什么?
 
-里面有很多包的项目可能需要很长的时间来引导. 
+里面有很多包的项目可能需要很长的时间来bootstrap.
 
-你可以大大减少花费在`lerna bootstrap`如果您打开吊装,请参见[吊装文件](./doc/hoist.md)欲了解更多信息. 
+你可以大大减少花费在`lerna bootstrap`,如果您打开hoist,请参见[hoist文件](./doc/hoist.md)了解更多信息.
 
-与此相结合,您可以更进一步地提高引导性能. [使用纱线作为NPM客户机](https://github.com/lerna/lerna#--npm-client-client)而不是`npm`.
+与[使用yarn作为 NPM 客户端](https://github.com/lerna/lerna#--npm-client-client)而不是`npm`的方法相结合,您可以更进一步地提高bootstrap性能. .
 
-## 根`package.json`
+## 根目录的`package.json`
 
-根`package.json`至少,你是如何安装的`lerna`在CI构建过程中本地进行. 您还应该把测试ㄡ内联和类似的任务放在那里,以便从根目录运行它们,因为从每个包单独运行它们比较慢. 根还可以保存所有"挂起"的包,这加速了使用时的自举. [`--hoist`][hoist]旗帜. 
+这根`package.json`,至少,是你在CI构建期间在本地安装`lerna`的方法. 您还应该把 测试,linting 和 类似的任务放在那里,以便从根目录运行它们,因为从每个包单独运行它们比较慢. 根还可以保存所有"hoisted"的包,这帮带[`--hoist`][hoist]参数的bootstapping加速
 
-可以将根作为托管位置添加 (在`packages`数组`lerna.json`-如果这是你需要的这将导致LeRNA将根依赖关系链接到包的目录,运行. `postinstall`脚本与其他,等等. 
+可以将 根目录 作为托管位置添加 (在`lerna.json`的`packages`字段数组)-如果你需要. 这将导致 Lerna 将 根依赖关系 链接到 包们 的目录,运行`postinstall`脚本与其他,等等.
 
 [hoist]: https://github.com/lerna/lerna/blob/master/doc/hoist.md
 
-## CI设置
+## CI 设置
 
-如上所述根`package.json`负责安装`lerna`局部地. 你需要自动化`bootstrap`不过. 这可以通过将它作为NPM脚本在CI阶段使用来实现. 
+如上所述,根`package.json`负责局部安装`lerna`. 不过你需要自动化`bootstrap`. 这可以通过将它作为 NPM 脚本,在 CI 阶段使用.
 
-实例根`package.json`: 
+实例 根`package.json`:
 
 ```json
 {
@@ -68,7 +66,7 @@
 }
 ```
 
-CircleCI的配置文件示例`circle.yml`) : 
+CircleCI 的配置文件示例(`circle.yml`) :
 
 ```yml
 dependencies:
