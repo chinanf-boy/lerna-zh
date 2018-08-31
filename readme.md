@@ -81,19 +81,19 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 -   命令
-    - [ ]  [`lerna publish`](./commands/publish#readme)
-    - [ ]  [`lerna version`](./commands/version#readme)
-    - [ ]  [`lerna bootstrap`](./commands/bootstrap#readme)
-    - [ ]  [`lerna list`](./commands/list#readme)
-    - [ ]  [`lerna changed`](./commands/changed#readme)
-    - [ ]  [`lerna diff`](./commands/diff#readme)
-    - [ ]  [`lerna exec`](./commands/exec#readme)
-    - [ ]  [`lerna run`](./commands/run#readme)
-    - [ ]  [`lerna init`](./commands/init#readme)
-    - [ ]  [`lerna add`](./commands/add#readme)
-    - [ ]  [`lerna clean`](./commands/clean#readme)
-    - [ ]  [`lerna import`](./commands/import#readme)
-    - [ ]  [`lerna link`](./commands/link#readme)
+    - [x]  [`lerna publish`](./commands/publish/readme.zh.md)
+    - [ ]  [`lerna version`](./commands/version/readme.zh.md)
+    - [ ]  [`lerna bootstrap`](./commands/bootstrap/readme.zh.md)
+    - [ ]  [`lerna list`](./commands/list/readme.zh.md)
+    - [ ]  [`lerna changed`](./commands/changed/readme.zh.md)
+    - [ ]  [`lerna diff`](./commands/diff/readme.zh.md)
+    - [ ]  [`lerna exec`](./commands/exec/readme.zh.md)
+    - [ ]  [`lerna run`](./commands/run/readme.zh.md)
+    - [ ]  [`lerna init`](./commands/init/readme.zh.md)
+    - [ ]  [`lerna add`](./commands/add/readme.zh.md)
+    - [ ]  [`lerna clean`](./commands/clean/readme.zh.md)
+    - [ ]  [`lerna import`](./commands/import/readme.zh.md)
+    - [ ]  [`lerna link`](./commands/link/readme.zh.md)
 
 ## 关于
 

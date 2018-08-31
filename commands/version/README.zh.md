@@ -1,23 +1,23 @@
 
 # `@lerna/version`
 
-> ㄰中文解释ㄱ: 布麦语版
+> 自上次发布以来，碰撞包更改的版本
 
 ## Usage
 
 ```sh
-lerna version 1.0.1 # explicit
-lerna version patch # semver keyword
+lerna version 1.0.1 # 明确的
+lerna version patch # semver 关键字
 lerna version       # select from prompt(s)
 ```
 
-When Run,this command does the following: 
+运行时,做以下事情: 
 
-1.  4 . Identfies Packages that have been updated since the previous tagged release .
+1.  自上个标注版本,明确更改包的版本.
 2.  新版本. 
-3.  Refkage Metadatta to reflect new release .
-4.  这些变化commits and the标签提交. 
-5.  pushes to the git远程. 
+3.  重新调整元数据以反映新版本.
+4.  描述更改与标注描述. 
+5.  推送git远程. 
 
 ## Positionals
 
