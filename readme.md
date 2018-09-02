@@ -15,7 +15,7 @@
 
 ---
 
-## 校对 🀄️
+## 校对 ✅
 
 <!-- doc-templite START generated -->
 <!-- repo = 'lerna/lerna' -->
@@ -83,7 +83,7 @@
 -   命令
     - [x]  [`lerna publish`](./commands/publish/readme.zh.md)
     - [x]  [`lerna version`](./commands/version/readme.zh.md)
-    - [ ]  [`lerna bootstrap`](./commands/bootstrap/readme.zh.md)
+    - [x]  [`lerna bootstrap`](./commands/bootstrap/readme.zh.md)
     - [x]  [`lerna list`](./commands/list/readme.zh.md)
     - [x]  [`lerna changed`](./commands/changed/readme.zh.md)
     - [x]  [`lerna diff`](./commands/diff/readme.zh.md)
@@ -106,7 +106,7 @@
 
 Lerna还可以减少开发和构建环境中大量软件包副本的时间和空间的大小 - 通常是将项目划分为多个单独的NPM软件包的缺点. 见
 
-- [ ] [提升文件](doc/hoist.zh.md)详情. 
+- [x] [提升文件](doc/hoist.zh.md)详情. 
 
 ### Lerna项目是什么样的?
 
