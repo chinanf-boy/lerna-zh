@@ -4,7 +4,7 @@
 
 ## 用法
 
-这个`list`子命令被混叠到几个方便的短时 (类似于[`npm ls`](https://docs.npmjs.com/cli/ls)) :
+这个`list`子命令被弄成几个方便的短命令 (类似于[`npm ls`](https://docs.npmjs.com/cli/ls)) :
 
 - `lerna ls`相同的`lerna list`,它本身类似于`ls`命令
 - `lerna ll`相当于`lerna ls -l`,显示[长的](#--long)输出
@@ -16,9 +16,9 @@ package-1
 package-2
 ```
 
-您可能会注意到额外的日志记录. `lerna`当在 shell 中运行这些命令时. 放心,他们不会感染你的管道咒语,因为所有的日志都发射到`stderr`不是`stdout`.
+当在 shell 中运行这些命令时,您可能会注意到`lerna`额外的日志记录. 放心,他们不会感染你的管道咒语,因为所有的日志都发射到`stderr`而不是`stdout`.
 
-无论如何,你总能通过. `--loglevel silent`创造神奇的贝壳魔法链.
+无论如何,你总能通过`--loglevel silent`创造神奇的shell魔法链.
 
 ## 选项
 
@@ -51,7 +51,7 @@ $ lerna ls --json
 ]
 ```
 
-**提示: **管道到[`json`](http://trentm.com/json/)实用工具选择单个属性:
+**提示:** 管道到[`json`](http://trentm.com/json/)实用工具,可用于选择单个属性:
 
 ```sh
 $ lerna ls --json --all | json -a -c 'this.private === true' name
@@ -92,11 +92,11 @@ package-3 v1.0.3 packages/pkg-3 (private)
 
 别名: `-p`
 
-显示可解析输出而不是圆柱视图.
+显示可解析输出,而不是圆柱视图.
 
 默认情况下,输出的每一行都是一个包的绝对路径.
 
-在`--long`输出,每行为`:`-分隔列表: `<fullpath>:<name>:<version>[:flags..]`
+在`--long`输出,每行用 `:` - 分隔列表: `<fullpath>:<name>:<version>[:flags..]`
 
 ```sh
 $ lerna ls --parseable
