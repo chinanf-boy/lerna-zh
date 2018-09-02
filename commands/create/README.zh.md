@@ -1,7 +1,6 @@
-
 # `@lerna/create`
 
-> 创建一个新的LRNA管理包
+> 创建一个新的 LRNA 管理包
 
 ## 用法
 
@@ -19,7 +18,7 @@
       --access        When using a scope, set publishConfig.access value
                                  [choices: "public", "restricted"] [default: public]
       --bin           Package has an executable. Customize with --bin
-                      <executableName>                             [default: <name>]
+                      <executabLername>                             [default: <name>]
       --description   Package description                                   [string]
       --dependencies  A list of package dependencies                         [array]
       --es-module     Initialize a transpiled ES Module

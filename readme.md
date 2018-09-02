@@ -89,9 +89,9 @@
     - [ ]  [`lerna diff`](./commands/diff/readme.zh.md)
     - [ ]  [`lerna exec`](./commands/exec/readme.zh.md)
     - [ ]  [`lerna run`](./commands/run/readme.zh.md)
-    - [ ]  [`lerna init`](./commands/init/readme.zh.md)
+    - [x]  [`lerna init`](./commands/init/readme.zh.md)
     - [ ]  [`lerna add`](./commands/add/readme.zh.md)
-    - [ ]  [`lerna clean`](./commands/clean/readme.zh.md)
+    - [x]  [`lerna clean`](./commands/clean/readme.zh.md)
     - [ ]  [`lerna import`](./commands/import/readme.zh.md)
     - [ ]  [`lerna link`](./commands/link/readme.zh.md)
 

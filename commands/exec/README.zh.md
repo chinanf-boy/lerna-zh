@@ -26,7 +26,7 @@ $ lerna exec -- node \$LERNA_ROOT_PATH/scripts/some-script.js
 
 ## 选项
 
-`lerna exec`尊重`--concurrency`,`--scope`和`--ignore`标志 (见) [过滤标志](https://www.npmjs.com/package/@lerna/filter-options))
+`lerna exec`遵循`--concurrency`,`--scope`和`--ignore`标志 (见) [过滤标志](https://www.npmjs.com/package/@lerna/filter-options))
 
 ```sh
 $ lerna exec --scope my-component -- ls -la

@@ -19,7 +19,7 @@ Command Options:
   --access        When using a scope, set publishConfig.access value
                              [choices: "public", "restricted"] [default: public]
   --bin           Package has an executable. Customize with --bin
-                  <executableName>                             [default: <name>]
+                  <executabLername>                             [default: <name>]
   --description   Package description                                   [string]
   --dependencies  A list of package dependencies                         [array]
   --es-module     Initialize a transpiled ES Module

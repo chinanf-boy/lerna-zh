@@ -8,7 +8,7 @@
 $ lerna bootstrap
 ```
 
-引导当前 LeNA 回购中的包. 安装所有依赖项并链接任何交叉依赖项.
+引导当前 Lerna 项目中的包. 安装所有依赖项并链接任何交叉依赖项.
 
 运行时,此命令将:
 
@@ -17,7 +17,7 @@ $ lerna bootstrap
 3.  `npm run prepublish`在所有自举包中.
 4.  `npm run prepare`在所有自举包中.
 
-`lerna bootstrap`尊重`--ignore`,`--ignore-scripts`,`--scope`和`--include-filtered-dependencies`标志 (见) [过滤标志](https://www.npmjs.com/package/@lerna/filter-options))
+`lerna bootstrap`遵循`--ignore`,`--ignore-scripts`,`--scope`和`--include-filtered-dependencies`标志 (见) [过滤标志](https://www.npmjs.com/package/@lerna/filter-options))
 
 向 NPM 客户端传递额外的参数`--`:
 
@@ -37,7 +37,7 @@ $ lerna bootstrap -- --production --no-optional
 
 ### ℴℴ 提升机[格洛布]
 
-安装外部依赖项匹配`glob`在回购根,所以他们可以对所有的包. 这些依赖项中的任何二进制文件都会链接到依赖包中. `node_modules/.bin/`目录,所以它们可以用于 NPM 脚本. 如果选项存在但不存在`glob`默认是`**` (吊起一切) . 此选项仅影响`bootstrap`命令.
+安装外部依赖项匹配`glob`在项目根,所以他们可以对所有的包. 这些依赖项中的任何二进制文件都会链接到依赖包中. `node_modules/.bin/`目录,所以它们可以用于 NPM 脚本. 如果选项存在但不存在`glob`默认是`**` (吊起一切) . 此选项仅影响`bootstrap`命令.
 
 ```sh
 $ lerna bootstrap --hoist
@@ -49,7 +49,7 @@ $ lerna bootstrap --hoist
 
 ### ℴℴ 诺霍斯特[格洛布]
 
-做*不*安装外部依赖项匹配`glob`在回购的根源上. 这可以用于在某些依赖关系下退出吊装.
+做*不*安装外部依赖项匹配`glob`在项目的根源上. 这可以用于在某些依赖关系下退出吊装.
 
 ```sh
 $ lerna bootstrap --hoist --nohoist=babel-*
@@ -174,7 +174,7 @@ $ lerna bootstrap --ci
 }
 ```
 
-- Lerna 检查每个依赖也是 LeNA 回购的一部分.
+- Lerna 检查每个依赖也是 Lerna 项目的一部分.
   - 在这个例子中,`babel-generator`可以是内部依赖,而`source-map`始终是外部依赖项.
   - 版本`babel-generator`在`package.json`属于`babel-core`满意`packages/babel-generator`传递内部依赖关系.
   - `source-map`是`npm install`ED (或`yarn`ED) 正常.
@@ -183,7 +183,7 @@ $ lerna bootstrap --ci
 
 ## 笔记
 
-- 当包中的依赖版本不被回购中的同名程序包所满足时,它将是`npm install`ED (或`yarn`ED) 正常.
+- 当包中的依赖版本不被项目中的同名程序包所满足时,它将是`npm install`ED (或`yarn`ED) 正常.
 - DIST 标签,像`latest`不满足[塞弗](https://semver.npmjs.com/)范围.
 - 循环依赖导致循环链环*可以*影响编辑/ IDE.
 
