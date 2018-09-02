@@ -8,7 +8,7 @@
 「 用于 管理 拥有多个packages 的 js项目 的工具 」
 
 > 比如 `npm install -g @vue/cli` ==> 这样的`@vue`样式, 供给 vuejs组织 管理 [cli生态链工具](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue)
-> 或插件,比如[gatsbyjs](https://github.com/gatsbyjs/gatsby/tree/master/packages)
+> 或众多插件,比如[gatsbyjs](https://github.com/gatsbyjs/gatsby/tree/master/packages)
 
 [中文](./readme.md) | [english](https://github.com/lerna/lerna)
 
@@ -82,7 +82,7 @@
 
 -   命令
     - [x]  [`lerna publish`](./commands/publish/readme.zh.md)
-    - [ ]  [`lerna version`](./commands/version/readme.zh.md)
+    - [x]  [`lerna version`](./commands/version/readme.zh.md)
     - [ ]  [`lerna bootstrap`](./commands/bootstrap/readme.zh.md)
     - [ ]  [`lerna list`](./commands/list/readme.zh.md)
     - [ ]  [`lerna changed`](./commands/changed/readme.zh.md)
